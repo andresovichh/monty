@@ -10,20 +10,33 @@
 
 int main(int argc, char *argv[])
 {
-FILE *file = fopen(argv[1], "rw");
+FILE *file;
 
 if (argc == 0 || argc > 1) /** check if no or more than 1 arg*/
 {
-printf("USAGE: monty file \n");
+fprintf(stderr, "USAGE: monty file \n");
 exit (EXIT_FAILURE);
 }
-if (file == NULL) /** check if file opened correctly*/
+file = fopen(argv[1], "rw");
+if (!file) /** check if file opened correctly*/
 {
-printf("Error: Can't open file <file>");
+fprintf(stderr, "Error: Can't open file <file>\n");
 exit (EXIT_FAILURE);
 }
-3. si usuario da instruccion invalida, devolver mensaje
-if (argv[0] != push || argv[0] != pall || argv[0] != pint)
+Algo que lea y guarde lo que mete el usuario
+executer();
+
+
+
+
+
+
+
+
+
+
+
+if (argv[0] != push || argv[0] != pall || argv[0] != pint) /** if instruction not valid*/
 {
 printf("L<line_number>: unknown instruction <opcode>", nro linea, instrucción);
 extit (EXIT_FAILURE);
