@@ -3,6 +3,7 @@
 
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 
 
 
@@ -39,5 +40,7 @@ typedef struct instruction_s
 void _executer(FILE *file);
 void _closer(FILE *file);
 char *_strchr(char *s, char c);
-void foo_selector(char *token, int line_nbr);
+void foo_selector(char *token, unsigned int line_nbr);
+void _push(int line_nbr, stack_t **stack, int int_value);
+int _nbr_checker(char *push_data, int _line_nbr);
 #endif
