@@ -14,7 +14,7 @@ FILE *file;
 (void)file;
 if (argc != 2) /** check if no or more than 1 arg*/
 {
-printf("USAGE: monty file \n");
+fprintf(stderr, "USAGE: monty file \n");
 exit (EXIT_FAILURE);
 }
 file  = fopen(argv[1], "r"); /** open file with read right*/
