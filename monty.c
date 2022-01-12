@@ -10,7 +10,8 @@
 
 int main(int argc, char *argv[])
 {
-FILE *file;
+FILE *file = NULL;
+
 (void)file;
 if (argc != 2) /** check if no or more than 1 arg*/
 {
@@ -23,7 +24,9 @@ if (file == NULL) /** check if file opened correctly*/
 printf("Error: Can't open file %s\n", argv[1]);
 exit (EXIT_FAILURE);
 }
+printf("llego antes de _executer() 1\n");
 _executer(file);
+
 fclose(file);
 return (EXIT_SUCCESS);
 }

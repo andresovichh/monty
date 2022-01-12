@@ -15,10 +15,11 @@ printf("Error: malloc failed\n");
 exit (EXIT_FAILURE);
 }
 new_node->n = int_value;/**store data in node*/
-
+if (*lifo)
+{
 (*lifo)->prev = new_node;
 new_node->next = *lifo;
 new_node->prev = NULL;
-
+}
 *lifo = new_node;
 }
