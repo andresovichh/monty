@@ -10,18 +10,29 @@
 
 int main(int argc, char *argv[])
 {
-FILE *file = fopen(argv[1], "rw");
+FILE *file;
 
 if (argc == 0 || argc > 1) /** check if no or more than 1 arg*/
 {
 printf("USAGE: monty file \n");
 exit (EXIT_FAILURE);
 }
+file  = fopen(argv[1], "r"); /** open file with read right*/
 if (file == NULL) /** check if file opened correctly*/
 {
-printf("Error: Can't open file <file>");
+printf("Error: Can't open file %s", argv[1]);
 exit (EXIT_FAILURE);
 }
+
+_executer(file);
+_closer(file);
+return (EXIT_SUCCESS);
+}
+
+
+
+
+
 3. si usuario da instruccion invalida, devolver mensaje
 if (argv[0] != push || argv[0] != pall || argv[0] != pint)
 {
