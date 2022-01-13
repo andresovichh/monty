@@ -25,4 +25,5 @@ new_node->next = *lifo;
 new_node->prev = NULL;
 }
 *lifo = new_node;
+free(new_node);
 }

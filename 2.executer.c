@@ -26,10 +26,12 @@ if (strcmp(token, "push") == 0)/**first word IS "push"*/
 push_data = strtok(NULL, "\t\n ");
 int_value = _nbr_checker(push_data, line_nbr);/**if success, returns int nbr*/
 push(line_nbr, &lifo, int_value);
+free(new_line);
 }
 else /** first word is not "push"*/
 {
 foo_selector(token, line_nbr, &lifo);
 }
 }
+
 }
