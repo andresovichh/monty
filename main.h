@@ -1,6 +1,6 @@
 #ifndef MAIN_H
 #define MAIN_H
-
+#define _POSIX_C_SOURCE 200809L /** so getline works*/
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -40,9 +40,13 @@ typedef struct instruction_s
 void _executer(FILE *file);
 void _closer(FILE *file);
 char *_strchr(char *s, char c);
-void foo_selector(char *token, unsigned int line_nbr, stack_t **stack);
+int foo_selector(char *token, unsigned int line_nbr, stack_t **stack);
 void _push(int line_nbr, stack_t **stack, int int_value);
 int _nbr_checker(char *push_data, int _line_nbr);
 void pall(stack_t **stack, unsigned int line_number);
-
+void pint(stack_t **lifo, unsigned int line_nbr);
+void swap(stack_t **lifo, unsigned int line_nbr);
+void pop(stack_t **lifo, unsigned int line_number);
+void add(stack_t **lifo, unsigned int line_number);
+void nop(stack_t **lifo, unsigned int line_number);
 #endif

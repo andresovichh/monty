@@ -1,13 +1,10 @@
 #include "main.h"
-
-
 /**
  * main - program to use Monty
  * @argc: Argument count
  * @argv: Value of args
  * Return: Always 0
  */
-
 int main(int argc, char *argv[])
 {
 FILE *file = NULL;
@@ -24,9 +21,7 @@ if (file == NULL) /** check if file opened correctly*/
 printf("Error: Can't open file %s\n", argv[1]);
 exit (EXIT_FAILURE);
 }
-printf("llego antes de _executer() 1\n");
 _executer(file);
-
 fclose(file);
 return (EXIT_SUCCESS);
 }
