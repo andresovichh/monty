@@ -18,7 +18,10 @@ while (getline(&new_line, &size, file) != -1)
 line_nbr++;/** because line starts at nbr 1*/
 token = strtok(new_line, "\t\n ");/** tokenize the 1st of line*/
 if (token == NULL)
+{
+free(token);
 continue;
+}
 if (strchr(token, *comment) != NULL)
 continue;/** if no token or comment found, restart*/
 if (strcmp(token, "push") == 0)/**first word IS "push"*/
@@ -33,4 +36,5 @@ foo_selector(token, line_nbr, &lifo);
 }
 }
 free(new_line);
+free(file);
 }

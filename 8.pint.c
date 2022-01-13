@@ -10,9 +10,11 @@ void pint(stack_t **lifo, unsigned int line_nbr)
 
 	if (lifo == NULL || *lifo == NULL)
 	{
-		fprintf(stderr, "L%d: can´t pint, stack empt\n", line_nbr);
-		exit(EXIT_FAILURE);
+	fprintf(stderr, "L%d: can´t pint, stack empt\n", line_nbr);
+	free(lifo);
+	exit(EXIT_FAILURE);
 	}
 	line_value = (*lifo)->n;
 	printf("%d\n", line_value);
+	free(lifo);
 }
