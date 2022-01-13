@@ -15,7 +15,7 @@ new_node = malloc(sizeof(stack_t));
 if (!lifo || !new_node)/** if no lifo or malloc then exit*/
 {
 printf("Error: malloc failed\n");
-exit (EXIT_FAILURE);
+exit(EXIT_FAILURE);
 }
 new_node->n = int_value;/**store data in node*/
 if (*lifo)
