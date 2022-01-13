@@ -1,8 +1,10 @@
-#include "main.h"
+#include "monty.h"
 
 /**
- * @brief 
- * 
+ * _nbr_checker - checks if number is number
+ * @push_data: data to be pusher
+ * @_line_nbr: line number
+ * Return: Always 0
  */
 int _nbr_checker(char *push_data, int _line_nbr)
 {

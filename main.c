@@ -1,4 +1,4 @@
-#include "main.h"
+#include "monty.h"
 /**
  * main - program to use Monty
  * @argc: Argument count

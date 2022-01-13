@@ -1,4 +1,4 @@
-#include "main.h"
+#include "monty.h"
 
 /**
  * _push - pushes data to node
