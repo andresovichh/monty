@@ -21,6 +21,7 @@ if (file == NULL) /** check if file opened correctly*/
 printf("Error: Can't open file %s\n", argv[1]);
 exit(EXIT_FAILURE);
 }
+
 _executer(file);
 fclose(file);
 return (EXIT_SUCCESS);
