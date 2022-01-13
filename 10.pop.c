@@ -3,7 +3,7 @@
 /**
  * @pop - removes top element of stack
  * @lifo: data node
- * @line_number: line number 
+ * @line_number: line number
  */
 void pop(stack_t **lifo, unsigned int line_number)
 {
