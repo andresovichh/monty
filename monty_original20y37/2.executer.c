@@ -23,12 +23,9 @@ if (strchr(token, *comment) != NULL)
 continue;/** if no token or comment found, restart*/
 if (strcmp(token, "push") == 0)/**first word IS "push"*/
 {
-push_data = strtok(NULL, "\t\n ");/** to walk the getline*/
-if (_nbr_checker(push_data, line_nbr) == 100)
-{
-int_value = atoi(push_data);
+push_data = strtok(NULL, "\t\n ");
+int_value = _nbr_checker(push_data, line_nbr);/**if success, returns int nbr*/
 _push(line_nbr, &lifo, int_value);
-}
 }
 else /** first word is not "push"*/
 {

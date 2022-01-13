@@ -1,4 +1,4 @@
-push 120
+push 100
 push 240
 pall
 pint
