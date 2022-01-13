@@ -8,6 +8,6 @@
 
 void nop(stack_t **lifo, unsigned int line_number)
 {
-	(void)lifo;
-	(void)line_number;
+(void)lifo;
+(void)line_number;
 }
