@@ -6,30 +6,23 @@
  * @lifo: data node
  * @int_value: number to push
  */
-void _push(unsigned int line_nbr, stack_t **lifo, int int_value)
+void _push(int line_nbr, stack_t **lifo, int int_value)
 {
-	stack_t *new_node = NULL;
+stack_t *new_node;/** create node to store values*/
 
-	(void)line_nbr;
-
-	if (!lifo)
-	{
-		exit(EXIT_FAILURE);
-	}
-	new_node = malloc(sizeof(stack_t));
-	if (!new_node)
-	{
-		printf("Error: malloc failed\n");
-        free(new_node);
-		exit(EXIT_FAILURE);
-	}
-	new_node->n = int_value;
-	if (*lifo)
-	{
-		(*lifo)->prev = new_node;
-		new_node->next = *lifo;
-		new_node->prev = NULL;
-	}
-	*lifo = new_node;
-    free(new_node);
+(void)line_nbr;
+new_node = malloc(sizeof(stack_t));
+if (!lifo || !new_node)/** if no lifo or malloc then exit*/
+{
+printf("Error: malloc failed\n");
+exit(EXIT_FAILURE);
+}
+new_node->n = int_value;/**store data in node*/
+if (*lifo)
+{
+(*lifo)->prev = new_node;
+new_node->next = *lifo;
+new_node->prev = NULL;
+}
+*lifo = new_node;
 }
