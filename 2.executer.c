@@ -1,8 +1,8 @@
 #include "monty.h"
 
 /**
- *  _executer - executer foo
- * 
+ * _executer - executer foo
+ * @file: a file
  */
 void _executer(FILE *file)
 {
@@ -24,7 +24,7 @@ continue;/** if no token or comment found, restart*/
 if (strcmp(token, "push") == 0)/**first word IS "push"*/
 {
 push_data = strtok(NULL, "\t\n ");
-int_value =_nbr_checker(push_data, line_nbr);/**if success, returns int nbr*/
+int_value = _nbr_checker(push_data, line_nbr);/**if success, returns int nbr*/
 _push(line_nbr, &lifo, int_value);
 }
 else /** first word is not "push"*/
