@@ -6,7 +6,7 @@
  * @lifo: data node
  * @int_value: number to push
  */
-void _push(int line_nbr, stack_t **lifo, int int_value)
+void push(int line_nbr, stack_t **lifo, int int_value)
 {
 stack_t *new_node;/** create node to store values*/
 
