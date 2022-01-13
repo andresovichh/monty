@@ -32,4 +32,5 @@ else /** first word is not "push"*/
 foo_selector(token, line_nbr, &lifo);
 }
 }
+free(new_line);
 }

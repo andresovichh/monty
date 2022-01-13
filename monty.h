@@ -41,7 +41,7 @@ void _executer(FILE *file);
 void _closer(FILE *file);
 char *_strchr(char *s, char c);
 int foo_selector(char *token, unsigned int line_nbr, stack_t **stack);
-void _push(int line_nbr, stack_t **stack, int int_value);
+void _push(unsigned int line_nbr, stack_t **stack, int int_value);
 int _nbr_checker(char *push_data, int _line_nbr);
 void pall(stack_t **lifo, unsigned int line_number);
 void pint(stack_t **lifo, unsigned int line_nbr);
