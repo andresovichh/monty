@@ -1,7 +1,7 @@
 #include "monty.h"
 
 /**
- * @nop - does nothing
+ * nop - does nothing
  * @lifo: data node
  * @line_number: line number
  */
