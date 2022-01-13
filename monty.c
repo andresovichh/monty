@@ -13,13 +13,13 @@ FILE *file = NULL;
 if (argc != 2) /** check if no or more than 1 arg*/
 {
 fprintf(stderr, "USAGE: monty file \n");
-exit (EXIT_FAILURE);
+exit(EXIT_FAILURE);
 }
 file  = fopen(argv[1], "r"); /** open file with read right*/
 if (file == NULL) /** check if file opened correctly*/
 {
 printf("Error: Can't open file %s\n", argv[1]);
-exit (EXIT_FAILURE);
+exit(EXIT_FAILURE);
 }
 _executer(file);
 fclose(file);
