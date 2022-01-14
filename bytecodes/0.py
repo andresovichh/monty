@@ -1,7 +1,8 @@
 push 100
 push 240
-pall
+     pall
+     
 pint
 # this is a comment
-push 900
+push 8
 pall

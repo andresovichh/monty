@@ -27,7 +27,7 @@ i++;
 }
 if (test == 2)
 {
-fprintf(stderr, "L%d: usage: push integer\12", _line_nbr);
+fprintf(stderr, "L%d: usage: push integer\n", _line_nbr);
 exit(EXIT_FAILURE);
 }
 return (_nbr);
