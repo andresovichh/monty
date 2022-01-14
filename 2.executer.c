@@ -28,8 +28,14 @@ if (_nbr_checker(push_data, line_nbr) == 100)
 {
 int_value = atoi(push_data);
 _push(line_nbr, &lifo, int_value);
+
+}
+else if (_nbr_checker(push_data, line_nbr) == 200)
+{
+free_dlistint(lifo);
 }
 }
+
 else /** first word is not "push"*/
 {
 foo_selector(token, line_nbr, &lifo);
