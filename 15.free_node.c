@@ -1,8 +1,8 @@
 #include "monty.h"
 
 /**
- * free_dlistint - frees a dll
- * @head: ptr to head
+ *free_dlistint - frees a dll
+ *@lifo: ptr to head
  */
 void free_dlistint(stack_t *lifo)
 {
