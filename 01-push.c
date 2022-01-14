@@ -12,7 +12,7 @@ stack_t *new_node;/** create node to store values*/
 
 (void)line_nbr;
 new_node = malloc(sizeof(stack_t));
-if (!lifo || !new_node)/** if no lifo or malloc then exit*/
+if (!new_node)/** if no lifo or malloc then exit*/
 {
 printf("Error: malloc failed\n");
 exit(EXIT_FAILURE);

@@ -32,6 +32,6 @@ return (0);
 }
 }
 /**if no match, then print error*/
-fprintf(stderr, "L%i: unknown instruction %s\n", line_nbr, token);
+fprintf(stderr, "L%d: unknown instruction %s\n", line_nbr, token);
 exit(EXIT_FAILURE);
 }
