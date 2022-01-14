@@ -3,7 +3,7 @@
 /**
  * add - adds top two elements of stack
  * @lifo: data node
- * @line_number: line number 
+ * @line_number: line number
  */
 void add(stack_t **lifo, unsigned int line_number)
 {

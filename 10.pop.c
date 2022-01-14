@@ -1,7 +1,7 @@
 #include "monty.h"
 
 /**
- * @pop - removes top element of stack
+ * pop - removes top element of stack
  * @lifo: data node
  * @line_number: line number
  */
