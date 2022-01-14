@@ -10,7 +10,8 @@ void pall(stack_t **lifo, unsigned int line_number)
 {
 stack_t *tmp = *lifo;
 (void)line_number;
-
+if (!tmp || !lifo)
+nop(lifo, line_number);
 while (tmp)
 {
 printf("%d\n", tmp->n);
