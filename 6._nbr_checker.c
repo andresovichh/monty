@@ -32,7 +32,8 @@ i++;
 if (test == 2)
 {
 fprintf(stderr, "L%d: usage: push integer\12", _line_nbr);
-exit(EXIT_FAILURE);
+return (200);
+/** exit(EXIT_FAILURE);*/
 }
 return (100);
 }

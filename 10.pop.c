@@ -9,8 +9,6 @@ void pop(stack_t **lifo, unsigned int line_number)
 {
 stack_t *tmp;
 
-tmp = malloc(sizeof(stack_t));
-
 tmp = *lifo;
 if (*lifo == NULL)
 {
