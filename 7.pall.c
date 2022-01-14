@@ -8,12 +8,16 @@
 
 void pall(stack_t **lifo, unsigned int line_number)
 {
-	stack_t *tmp = *lifo;
-	(void)line_number;
+stack_t *tmp = *lifo;
+(void)line_number;
 
-	while (tmp)
-	{
-		printf("%d\n", tmp->n);
-		tmp = tmp->next;
-	}
+if (!tmp)
+{
+exit(EXIT_SUCCESS);
+}
+while (tmp)
+{
+printf("%d\n", tmp->n);
+tmp = tmp->next;
+}
 }
