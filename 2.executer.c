@@ -4,6 +4,7 @@
  * _executer - executer foo
  * @file: a file
  */
+
 void _executer(FILE *file)
 {
 int int_value = 0;
@@ -24,6 +25,11 @@ continue;/** if no token or comment found, restart*/
 if (strcmp(token, "push") == 0)/**first word IS "push"*/
 {
 push_data = strtok(NULL, "\t\n ");/** to walk the getline*/
+if (push_data == NULL)
+{
+	fprintf(stderr, "L%d: usage: push integer\n", line_nbr);
+	exit(EXIT_FAILURE);
+}
 if (_nbr_checker(push_data, line_nbr) == 100)
 {
 int_value = atoi(push_data);
