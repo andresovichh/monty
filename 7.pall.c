@@ -11,10 +11,6 @@ void pall(stack_t **lifo, unsigned int line_number)
 stack_t *tmp = *lifo;
 (void)line_number;
 
-if (!tmp)
-{
-exit(EXIT_SUCCESS);
-}
 while (tmp)
 {
 printf("%d\n", tmp->n);

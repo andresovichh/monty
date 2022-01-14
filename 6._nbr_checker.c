@@ -17,6 +17,11 @@ if ((push_data[i] >= 48 && push_data[i] <= 57) || push_data[i] == 45)
 {
 test = 1;
 }
+else if (push_data[i] == 32)
+{
+test = 2;
+break;
+}
 else
 {
 test = 2;

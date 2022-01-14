@@ -30,6 +30,7 @@ _push(line_nbr, &lifo, int_value);
 else /** first word is not "push"*/
 {
 foo_selector(token, line_nbr, &lifo);
+continue;
 }
 }
 }
