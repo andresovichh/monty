@@ -18,7 +18,7 @@ exit(EXIT_FAILURE);
 fp = fopen(argv[1], "r"); /** open file with read right*/
 if (fp == NULL) /** check if file opened correctly*/
 {
-printf("Error: Can't open file %s\n", argv[1]);
+fprintf(stderr, "Error: Can't open file %s\n", argv[1]);
 exit(EXIT_FAILURE);
 }
 _executer(fp);
