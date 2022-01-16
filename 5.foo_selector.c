@@ -19,6 +19,7 @@ instruction_t opcode_list[] = {
 {"pop", pop},
 {"add", add},
 {"nop", nop},
+{"sub", sub},
 };
 /** Get length of instruction list*/
 list_len = sizeof(opcode_list) / sizeof(instruction_t);

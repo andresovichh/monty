@@ -50,4 +50,5 @@ void pop(stack_t **lifo, unsigned int line_number);
 void add(stack_t **lifo, unsigned int line_number);
 void nop(stack_t **lifo, unsigned int line_number);
 void free_dlistint(stack_t *lifo);
+void sub(stack_t **lifo, unsigned int line_number);
 #endif
