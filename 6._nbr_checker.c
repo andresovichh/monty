@@ -24,16 +24,16 @@ break;
 }
 else
 {
-test = 2;
+test = 3;
 break;
 }
 i++;
 }
-if (test == 2)
+if (test == 3)
 {
 fprintf(stderr, "L%d: usage: push integer\n", _line_nbr);
-return (200);
-/** exit(EXIT_FAILURE);*/
+/** return (200); */
+exit(EXIT_FAILURE);
 }
 return (100);
 }
